@@ -75,7 +75,7 @@ function Promotion() {
   if (age >= 18) {
     const RtrAge = 60 - age;
     if (RtrAge > 0) {
-      Rtryear = RtrAge + Currentyear;
+      let Rtryear = RtrAge + Currentyear;
       console.log(
         "\t Promotion status: Eligible, Your next promotion will be in financial year of June ",
         promoyear,
