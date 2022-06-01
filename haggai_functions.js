@@ -15,7 +15,7 @@ function toYears(months){
     return years;
 }
 
-//Definition of a function that computes compound interest
+//Definition of a function that computes compound interest.
 function getCompInt(princ, rate, dur){
     let compInt = (princ*(1+(rate/100))**dur) - princ;
     return compInt;
