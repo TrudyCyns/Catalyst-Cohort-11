@@ -38,12 +38,12 @@ function analyseInv(principal, rate, duration){
 
 /*
 invoking the function analyseInv() to test the program.
-passing (1000, 10, 12) as the arguments,
+passing (1000, 10, 24) as the arguments,
 expected results are:
                 Amount invested: 1000
-                Duration of investment: 12 months [1 year(s)]      
+                Duration of investment: 24 months [2 year(s)]      
                 Interest earned: 210
                 Value of investment at maturity: 1210
 */
 
-analyseInv(1000, 10, 12);
+analyseInv(1000, 10, 24);
