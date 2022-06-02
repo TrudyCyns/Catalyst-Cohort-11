@@ -5,6 +5,7 @@ function client(name, age, modeOfpayment, residence)
     return name;
 };
 client("Babara",29,"installement","Entebbe")
+client("Martin",31,"installement","Buddo")
 
 // Define a function of a loan, give it rate as the parameter, and assign it an argument.
 // Define a new variable which you assign a value of rate multiply by the value of money the client wants.
