@@ -1,0 +1,47 @@
+extends layout 
+
+block content
+    body.regist
+        if alert=='success'
+            div.alert.alert-success Washer registered successfully!
+        if alert=='error'
+            div.alert.alert-danger OOPS! something went wrong!
+        h2.reg NEW EMPLOYEES REGISTRATION
+        .container-register
+                form.regForm(name='register' action='/register' method='POST' onsubmit="return validation2();")
+                    small#errornames
+                    input#names(type='text' placeholder='Full Name' name="fullnames")
+                    br
+                    br
+
+                    small#errorgender
+                    select#gender(name='Gender')
+                        option(value='gender') Gender
+                        option(value='female') Female
+                        option(value='male') Male
+                    br
+                    br 
+
+                    small#errordob
+                    input#dob(type='text' max='2003-12-01' onfocus="(this.type='date')" placeholder='Date of birth' name="dob")
+                    br
+                    br
+
+                    small#errores   
+                    input#residence(type='text' placeholder='Place of residence' name="res")
+                    br  
+                    br
+
+                    small#errornin
+                    input#nin(type='text' placeholder='NIN number' name="nin")
+                    br 
+                    br 
+                    small#errorza 
+                    input#zwash(type='text' placeholder='Zwash ID' name="zwash")
+                    br 
+                    br 
+                
+                    button.button2(type="submit") REGISTER
+        a(href='/register_manager') Register new manager
+
+                                

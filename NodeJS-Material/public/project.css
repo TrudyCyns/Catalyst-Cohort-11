@@ -1,0 +1,277 @@
+/* editing the body of our files */
+body{
+ background-color: #f1f1f1;
+
+}
+.collections{
+  background-color:  #222f3e;
+}
+p{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  margin: 5px;
+}
+
+.text-muted {
+  font-size: 24px;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  height: 150px;
+}
+
+
+/* editing the login page */
+.container {
+  width: 50%;
+  height: 50%;
+}
+.sign-in {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  color:#404042;
+  font-weight: bold;
+}
+.container-login {
+  color: white;
+  justify-content: center;
+}
+form {
+  border-radius: 2%;
+  padding: 15px;
+  background:linear-gradient(5deg, #0B132B, grey);
+  
+}
+.btn-primary{
+  margin-left: 30%;
+  width: 40%;
+  margin-top: 10px;
+}
+.copyright{
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #f1f1f1;
+  margin: auto;
+}
+
+/* editing registration pages */
+.container-register{
+  border: none;
+  border-radius: 2%;
+  padding: 15px;
+  background:linear-gradient(5deg, #0B132B, grey);
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+#names, #gender, #dob, #residence, #nin, #zwash{
+  width: 90%;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  color: grey;
+  
+}
+.button2{
+  width: 80%;
+  padding: 8px;
+  background-color: rgb(67, 127, 238);
+  border: none;
+  border-radius: 6px;
+ color: white;
+}
+.button3{
+  width: 80%;
+  padding: 10px;
+  background-color: #7d9fe9;
+  border: none;
+  border-radius: 6px;
+ color: black;
+ text-transform: uppercase;
+ margin-top: 50px;
+}
+.button2:hover{
+  background-color: grey;
+}
+.button3:hover{
+  background-color: grey;
+}
+.reg{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+/* editing car tracker */
+#form-wrapper{
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+ .arrival-time, .date, .color{
+    width: 85%;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+   color: grey;
+   justify-content: center;
+}
+.numberPlate{
+  width: 93%;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+ color: grey;
+ justify-content: center;
+}
+
+
+select,#date, #price{
+    width: 85%;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    color:grey;
+}
+.container2{
+   width: 50%;
+   float: left;
+   
+}
+.container3{
+    width: 50%;
+    float: right;
+ }
+ .regist{
+  background-image: url(/images/bg4.jpg);
+  background: linear-gradient(to bottom, #000000b8, #000000b8), url('/images/bg4.jpg');
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-attachment: fixed;
+ }
+
+ /* editing dashboard */
+ .table{
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  table-layout: fixed;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  background-color: lightgray;
+ }
+ .table2{
+   width: 40%;
+  border-radius: 10px;
+  table-layout: fixed;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  height: 80px;
+  margin: auto;
+  border-top: 2px solid grey;
+  background-color: lightgray;
+ }
+ td{
+  width: 40%;
+ border-radius: 10px;
+ table-layout: fixed;
+ border: none;
+ text-align: center;
+ font-size: 18px;
+ height: 70px;
+ margin: auto;
+ border-top: 2px solid grey;
+}
+
+
+ h1, h2{
+  text-align: center;
+  margin-top: 20px;
+  font-family: roboto;
+ }
+ .dash{
+ background-image: url(/images/papper3.jfif);
+ background: linear-gradient(to bottom, white, #000000b8), url('/images/papper3.jfif');
+ color: black;
+ background-repeat: no-repeat;
+ background-size: cover;
+background-attachment: fixed;
+ }
+ .container-table{
+   width: 100%;
+   text-align: center;
+  height: 20px;
+  
+ }
+a{
+  color: rgb(179, 178, 178);
+}
+.alert{
+  width: 30%;
+  margin: auto;
+  font-family: roboto;
+  text-align: center;
+  font-size: 18px;
+}
+.search{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+.searchcars{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+.inventory{
+  border: none;
+  border-radius: 2%;
+  padding: 15px;
+  background:linear-gradient(5deg, #0B132B, grey);
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.delete{
+background: lightgray;
+}
+.table-washers{
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  border-radius: 12px;
+  background: lightgray;
+}
+.table-bordered{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  border-radius: 12px;
+  background: lightgray;
+}
+
+.contacts{
+ margin-left: 700px;
+ font-size: 16px;
+ font-family: roboto;
+}
+
