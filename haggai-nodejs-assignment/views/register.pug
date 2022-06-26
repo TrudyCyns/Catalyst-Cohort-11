@@ -1,0 +1,57 @@
+extends layout 
+block content  
+  header.card-header 
+    h4.card-title Vender registration 
+  form#fm(action="." method= "POST")
+    .form-row 
+      .col.form-group
+        label(for="firstName") First Name:
+        input.form-control#firstname(type="text" name="first_name") 
+      .col.form-group
+        label(for="surName")  Surname: 
+        input.form-control(type="text" name="surname")
+    .form-row 
+      .col.form-group
+        label(for="gender") Gender: 
+          div
+        label.form-check.form-check-inline
+        input.form-check-input(type="radio" name="gender" value="Female")
+        span.form-check-label Female
+        label.form-check.form-check-inline
+        input.form-check-input(type="radio" name="gender" value="Male")
+        span.form-check-label Male      
+      .col.form-group 
+        label(for="Age") Age:
+        input.form-control(type="numeric" name="age") 
+    .form-row 
+      .col.form-group
+        label(for="NIN") National ID No. (NIN) 
+        input.form-control(type="alphanumeric" name="nin") 
+      .col.form-group
+        label(for="TelephoneNo") Telephone No.
+        input.form-control(type="text" name="tel_no")
+    .form-row 
+        .col.form-group 
+            label(for="sizeOfCapital") Size of Capital:
+            select.form-control(type="text" name="size_of_capital")
+                option(value='Default') please select size of your capital 
+                option(value="less than 1million") Less than 1 million
+                option(value="from 1million to 5million") from 1million to 5 million
+                option(value="above 5 million") above 5 million 
+        .col.form-group 
+            label(for="businessCategory") Business Category:
+            select.form-control(type="text" name="business_category") 
+                option(value='Default') Please select business category
+                option(value='Hotel') Hotel
+                option(value='Stationery') Statinery
+                option(value='Grocery') Grocery
+                option(value='Transport') Transport
+                option(value='General merchandize') General Merchandize
+                option(value='Others') Others  
+    .form-row    
+      .col.form-group
+        label(for="dateOfReg") Date of Registration
+        input.form-control(type="date" name="date_of_reg")    
+    .form-row 
+        .col.form-group 
+                button.submit.btn.btn-primary.btn-block Register
