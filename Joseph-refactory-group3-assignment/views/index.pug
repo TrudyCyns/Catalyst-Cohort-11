@@ -1,0 +1,96 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Business Registration Form
+  link(rel='stylesheet' href='css/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/style.css')
+nav.navbar-dark.bg-dark
+  .row
+    .col
+      h1.text-light.text-center Business Registration Form
+.container
+  .heading
+    p.labels
+      | To register your business, please fill in the form below.
+    p
+      | Please provide all required details to register your business with us  
+  form(action="." method="POST") 
+    .row.g-3(name='regForm') 
+      .col-md-6
+        label.labels.form-label
+          | Business Owner 
+          span.danger *
+        input#firstname.form-control(type='text' name='firstname' placeholder='First name' aria-label='First name' onblur='val_fName()')
+        p#para1 name can&apos;t be blank
+      .col-md-6
+        label.labels.form-label(for='lastname')
+          span.labels Last Name
+        input.form-control(type='text' name='lastname' placeholder='Last name' aria-label='Last name' onblur='val_Lname()')
+        p#para2 name can&apos;t be blank
+      .col-md-6
+        label.labels.form-label(for='businessName')
+          | Business Name 
+          span.danger *
+        input#businessName.form-control(type='text' name='businessName' placeholder='Business name' aria-label='Business name' onblur='val_business()')
+        p#para3
+      .col-md-6
+        label.labels.form-label
+          | Contact Number 
+          span.danger *
+        input.form-control(type='text' name='phone' placeholder='Enter contact number' aria-label='Contact number' onblur='val_contact()')
+        p#para4
+      .col-md-6
+        label.labels.form-label
+          | Email 
+          span.danger *
+        input.form-control(type='email' name='email' placeholder='' aria-label='email' onblur='val_email()')
+        p#para5
+      .col-md-6
+        label.labels.form-label
+          | Address 
+          span.danger *
+        input.form-control(type='text' name='street' placeholder='Street Address' aria-label='Street address' onblur='val_street()')
+        p#para6
+      .col-md-6
+        label.form-label.labels(for='Plotnumber') Plot Number
+        input.form-control(type='text' name='plotNumber' placeholder='plot number' aria-label='plot number' onblur='val_plot()')
+        p#para7
+      .col-md-6
+        label.form-label.labels(for='city') City
+        input.form-control(type='text' placeholder='City' name='city' aria-label='City name' onblur='val_city()')
+        p#para8
+      
+      .col-md-6
+        label.form-label.labels(for='region') Region
+        select.form-control(name='biz_region' onblur='val_region()')
+          option(value='default') Choose region
+          option(value='central') Central
+          option(value='eastern') Eastern
+          option(value='western') Western
+          option(value='southern') Southern
+        p#para9
+      .col-md-6
+        label.labels.form-label
+          | Type of Business 
+          span.danger *
+        select#region.form-control(name='businessType' onblur='biz_category()')
+          option(value='Default') Please select business category
+          option(value='Agriculture') agriculture
+          option(value='Manufacturing') Manufacturing
+          option(value='Tourism') Tourism
+          option(value='Construction') Construction
+          option(value='Hospitality') Hospitality
+          option(value='Education') Education
+        p#para10
+      .col-12
+        label.labels.form-label
+          | Description of Business 
+          span.danger *
+        textarea.form-control(type='text' name='description' placeholder='' aria-label='text area' onblur='biz_desc()')
+        p#para11
+      .col-12
+        button.submit.btn.btn-lg.btn-warning REGISTER BUSINESS
+script(src='js/bootstrap.min.js')
+script(src='forms.js')
