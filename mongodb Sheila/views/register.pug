@@ -1,0 +1,79 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Vendor Registration Form
+  link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+  link(rel="stylesheet",href="/vendor.css")
+body     
+  .container-fluid
+    #header_content
+      h1#header VENDOR REGISTRATION FORM
+      p#header_caption Fill out the market Vendor Form
+      hr
+  .container
+    form(action="." method="POST")
+      .row
+        .tableRow.col
+          label(for='firstName') First Name:
+          input#firstname(type='text' name='firstname' onblur='valFirstName(3, 12, this, nameerror)')
+          br
+          span#nameerror
+        .tableRow.col
+          label(for='surname') Surname:
+          input#surname(type='text' name='surname' onblur='valSurName(4,12, this,errorsec)')
+          br
+          span#errorsec
+      .row
+        .tableRow.col
+          label(for='contact_num') Contact No:
+          input#contact_num(type='text' name='contact_num' placeholder='0751919490' onblur='valCont(this, contacterror)')
+          br
+          span#contacterror
+        .tableRow.col
+          label(for='nin_num') NIN:
+          input#nin_num(type='alphanumeric' name='nin' onblur='valNin(this, ninerror)')
+          br
+          span#ninerror
+      .row
+        .tableRow.col
+          label Location:
+          input(type='alphanumeric' name='location' onblur='varLoc()')
+        .tableRow.col
+          label Next of Kin:
+          input(type='text' name='nextofkin' onblur='valKin(5,12,this,kinerror)')
+          br
+          span#kinerror
+      .row
+        .tableRow.col
+          label Size of Capital
+          input(type='numeric' name='sizeofcapital' onblur='varCapital(3, 12, this,errorka)')
+          span#errorka
+        .tableRow.col
+          label Type of goods:
+          input(type='text' name='typeofgoods' onblur='varGoods()')
+          br
+          span#errorgoods
+      .row
+        .tableRow.col
+          label Gender:
+          input(type='radio' value='male' name='gender' required='')
+          | Male
+          input(type='radio' value='female' name='gender')
+          | female
+      .row
+          .tableRow.col
+            label Age:
+            input(type='numeric' name='age')
+          .tableRow.col
+            label Date of registration:
+            input(type='datetime-local' name='dateofregistration')
+      .form-row
+        .col.form-group
+        button.submit.btn.btn-primary.btn-block Register
+  hr
+  .text-center.p-3(style='background-color: #add8e6')  &copy; 2022 Copyright: Arinaitwe Sheila
+  // these are js files
+  script(src='/public/vendor.js')
+  script(src='/bootstrap/js/bootstrap.bundle.js')

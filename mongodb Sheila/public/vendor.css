@@ -1,0 +1,54 @@
+body{
+    font-family: 'lato' Verdana, Geneva, Tahoma, sans-serif;
+}
+#header{
+    text-align: center;
+    font-size: xx-large;
+    color:black;
+    padding-top: 10px ;
+
+}
+#header_caption{
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 5px ;
+    background-color: black;
+    padding-top: 5px ;
+    font-style: italic;
+    color: white;
+
+
+}
+#header_content{
+    background-color:#add8e6;
+}
+
+form {
+    margin-left: 350px;
+    display: table;
+}
+.btnc{
+    background-color: aquamarine;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.tableRow label {
+    display: table-cell;
+    padding: 3px;
+}
+
+input, option {
+    font-size: 14px;
+}
+
+.tableRow label:first-child {
+    text-align: right;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
