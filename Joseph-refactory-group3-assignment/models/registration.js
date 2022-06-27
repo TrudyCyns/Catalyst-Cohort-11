@@ -1,0 +1,48 @@
+const mongoose= require('mongoose');
+const userSchema =new mongoose.Schema ({
+    firstname:{
+        type:String,
+        trim:true,
+    },
+    lastname:{
+        type:String,
+        trim:true,
+    },
+    businessName:{
+        type:String,
+        trim:true,
+    },
+    phone:{
+        type:String,
+        trim:true,
+    },
+    email:{
+        type:String,
+        trim:true,
+    },
+    street:{
+        type:String,
+        trim:true,
+    },
+    plotNumber:{
+        type:String,
+        trim:true,
+    },
+    dob:{
+        type:Date        
+    },
+    city:{
+        type:String,        
+    },
+    biz_region:{
+        type:String,      
+    },
+    businessType:{
+        type:String,        
+    },
+    description:{
+        type:String,        
+    }
+})
+
+module.exports=mongoose.model("Regsitration",userSchema)
