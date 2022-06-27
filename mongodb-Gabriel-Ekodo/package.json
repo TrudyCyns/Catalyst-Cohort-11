@@ -1,0 +1,22 @@
+{
+  "name": "mongodb-nodejs-express-project",
+  "version": "1.0.0",
+  "description": "A business registration form that submits data to the mongodb database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "author": "gabriel ekodo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.4.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}

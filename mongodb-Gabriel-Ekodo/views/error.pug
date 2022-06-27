@@ -1,0 +1,21 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title=title
+  link(rel='stylesheet' href='css/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/style.css')
+nav.navbar-dark.bg-dark
+  .row
+    .col
+      h1.text-light.text-center #{title}
+.container
+  .heading
+    h1.text-danger Sorry, please fill in all the required fields correctly!
+    h1.text-danger #{msg}
+    a(href="/register").btn-warning.btn Register Here
+  
+  
+  script(src='js/bootstrap.min.js')
+script(src='forms.js')
